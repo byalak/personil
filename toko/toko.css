@@ -80,76 +80,7 @@ header {
     cursor: pointer;
   }
 
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 10px;
-    }
-  
-    .logo {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-  
-    .logo span {
-      font-size: 1.5rem;
-    }
-  
-    .navbar {
-      display: none; 
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      font-size: 15px;
-    }
-    
-    .custom-icon {
-      width: 15px;
-    }
-  
-    /* hamburger icon */
-    .hamburger {
-      display: block;
-      color: #fff;
-      position: absolute;
-      top: 10px;
-      left: 20px;
-    }
-  
-    .navbar.active {
-      display: flex; 
-      flex-direction:row;
-      justify-content: center;
-      gap: 4px;
-      width: 100%;
-    }
-    .navbar.active > * {
-      margin: 4px; 
-      padding: 4px; 
-    }
-    
-    .search-box {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 18px;
-    }
-  
-    .logo span {
-      font-size: 1.3rem;
-    }
-  
-    .search-box {
-      padding: 6px 8px;
-      display: none;
-    }
-}
+
 
 
 /* Section Styling */
@@ -161,13 +92,13 @@ section {
 
 #home {
     min-height: 100vh;
-    background-image: url('../foto/laki.jpg'); /* Path ke gambar */
-    background-size: cover;  /* Membuat gambar menutupi seluruh section */
-    background-position: center; /* Menempatkan gambar di tengah */
+    background-image: url('../foto/laki.jpg'); 
+    background-size: cover;  
+    background-position: center; 
     background-attachment: fixed;
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-    color: white; /* Warna teks agar terlihat jelas di atas gambar */
-    padding: 5rem 0; /* Jarak vertikal (atas-bawah) untuk section */
+    background-repeat: no-repeat; 
+    color: white; 
+    padding: 5rem 0; 
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -198,7 +129,7 @@ section {
 #home h1 {
     font-size: 2.5rem;
     margin-top: 20px;
-    animation: slideIn 1s ease-out forwards; /* Animasi untuk judul */
+    animation: slideIn 1s ease-out forwards; 
 
 }
 
@@ -208,11 +139,11 @@ section {
     margin: auto;
     line-height: 1.6;
     transition: transform 0.5s ease;
-    animation: fadeIn 1.5s ease-out forwards; /* Animasi untuk paragraf */
+    animation: fadeIn 1.5s ease-out forwards; 
 }
 
 #home p:hover {
-    transform: scale(1.05); /* Membuat teks sedikit membesar saat hover */
+    transform: scale(1.05); 
 }
 
 #home .btn-primary {
@@ -221,17 +152,17 @@ section {
     padding: 12px 30px;
     font-size: 1.2rem;
     color: #fff;
-    border-radius: 25px; /* Tombol lebih bulat */
+    border-radius: 25px; 
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
-    transition: all 0.3s ease; /* Transisi efek */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
 }
 
 /* Efek hover dengan perubahan warna dan bayangan */
 #home .btn-primary:hover {
     background-color: #ffc107;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
-    transform: translateY(-5px); /* Tombol sedikit terangkat */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); 
 }
 
 /* Materi Section */
@@ -336,6 +267,77 @@ footer p {
 }
 
 
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 5px;
+    }
+  
+    .logo {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  
+    .logo span {
+      font-size: 1.5rem;
+    }
+  
+    .navbar {
+      display: none; 
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      font-size: 15px;
+    }
+    
+    .custom-icon {
+      width: 15px;
+    }
+  
+    /* hamburger icon */
+    .hamburger {
+      display: block;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+  
+    .navbar.active {
+      display: flex; 
+      flex-direction:row;
+      justify-content: center;
+      gap: 4px;
+      width: 100%;
+    }
+    .navbar.active > * {
+      margin: 4px; 
+      padding: 4px; 
+    }
+    
+    .search-box {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 18px;
+    }
+  
+    .logo span {
+      font-size: 1.3rem;
+    }
+  
+    .search-box {
+      padding: 6px 8px;
+      display: none;
+    }
+}
+
 
 /* Home Section */
 @media screen and (max-width: 768px) {
@@ -430,21 +432,6 @@ footer p {
 
 /* Extra Small Screens */
 @media screen and (max-width: 480px) {
-  body {
-      font-size: 12px;
-  }
-
-  header {
-      padding: 5px 10px;
-  }
-
-  .logo {
-      font-size: 18px;
-  }
-
-  .navbar {
-      gap: 8px;
-  }
   section {
     margin-top: 5px;
   }
