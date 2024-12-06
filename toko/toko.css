@@ -445,6 +445,9 @@ footer p {
   .navbar {
       gap: 8px;
   }
+  section {
+    margin-top: 5px;
+  }
 
   #home h1 {
       font-size: 1.5rem;
