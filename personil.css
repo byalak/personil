@@ -113,6 +113,34 @@ header {
   margin-bottom: 1.5rem;
   color: #b7b7b7;
 }
+/* Kontainer untuk ikon-ikon Instagram */
+.instagram-container {
+  display: flex;
+  position: relative;
+  flex-direction: row; 
+  gap: 15px;           
+  margin-top: 10px;
+  justify-content: center;
+  
+}
+
+/* Link Instagram */
+.instagram-link {
+  display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Ukuran dan Efek Hover pada Ikon */
+.instagram-link {
+  width: 30px;
+  height: 30px;      
+  transition: transform 0.3s;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1); 
+}
 
 .hero-image img {
   width: 100%;
