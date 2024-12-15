@@ -142,17 +142,15 @@ header {
     background: #808080;
   }
   footer {
-          background-color: #FFea00;
-          color: black;
-          text-align: center;
-          padding: 4px;
-          margin-top: auto;
-          position: bottom;
-          width: 100%;
-          bottom: 0;
-          left: 0;
-      }
-
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffea00;
+    color: #1f1f1f;
+    padding: 10px 10px;
+  
+  }
+  .footer-text {
+    text-align: center;
+  }
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
@@ -288,6 +286,12 @@ header {
   
   .card-link:hover {
     background: #808080;
+  }
+  .footer {
+    padding: 5px 5px;
+  }
+  .footer-text{
+    font-size: 12px;
   }
 }
 

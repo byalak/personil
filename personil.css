@@ -580,6 +580,12 @@ button:hover {
   color: #28a745;
   text-align: center;
 }
+.footer {
+  padding: 5px 5px;
+}
+.footer-text{
+  font-size: 12px;
+}
 
 }
 
